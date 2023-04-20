@@ -1,4 +1,6 @@
 
+This excercise was completed using the [SveltKit](https://kit.svelte.dev/) framework. Here are the simple instructions to setup the project on your local machine
+
 ## Local Setup
 Fetch the repo and enter into the project dictory
 ```bash
