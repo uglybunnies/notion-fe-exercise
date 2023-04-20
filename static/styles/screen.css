@@ -1,0 +1,38 @@
+:root {
+  --base-scale:calc(100vw / 87.5);
+  --title-font-size:clamp(2em, calc(var(--base-scale) * 4.375), 8.75em);
+  --large-font-size: clamp(1.5em, calc(var(--base-scale) * 1.5), 3em);
+  --nav-font-size: clamp(1.0625em, calc(var(--base-scale) * 1.0625), 2.125em);
+  --h3-font-size:clamp(1.375em, calc(var(--base-scale) * 1.375), 2.75em);
+  --med-font-size:clamp(1.25em, calc(var(--base-scale) * 1.25), 2.5em);
+  --base-font-size:clamp(1em, calc(var(--base-scale) * 1), 2em);
+  --small-font-size:clamp(.9375em, calc(var(--base-scale) * 0.9375), 1.875em);
+  --x-small-font-size:clamp(.875em, calc(var(--base-scale) *.875), 1.75em);
+  --body-copy-color: hsla(0, 0%, 0%, 1);
+  --orange-color: hsla(4, 69%, 62%, 1)
+}
+html {
+  font-size: 100%;
+}
+body {
+  font: var(--base-font-size)/1.5 Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.page-wrap {
+  margin: 0 auto;
+  max-width: 75em;
+  padding: .5em;
+}
+
+@media screen and (max-width: 648px) {
+  :root {
+    --title-font-size:clamp(1.5em, calc(var(--base-scale) * 1.5), 3em);
+    --large-font-size: clamp(1.25em, calc(var(--base-scale) * 1.25), 2.5em);
+  }
+  .page-wrap {
+    padding: 0 1em;
+  }
+}
